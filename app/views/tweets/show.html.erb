@@ -1,0 +1,7 @@
+<h1>Tweet</h1>
+제목 : <%= @tweet.title %><br>
+내용 : <%= @tweet.content %><br>
+사진 : <%= image_tag @tweet.photo_url %><br>
+<%= link_to "수정", edit_tweet_path(@tweet)%>
+<%= link_to "삭제", tweet_path(@tweet), method: "delete" %>
+<%= link_to "홈으로", "/"%>

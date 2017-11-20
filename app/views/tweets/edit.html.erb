@@ -1,0 +1,6 @@
+<h1>Tweets수정</h1>
+<%= form_for(@tweet) do |t| %>
+  제목 : <%= t.text_field(:title) %><br>
+  내용 : <%= t.text_field(:content) %><br>
+  <%= t.submit "수정" %>
+<% end %>
